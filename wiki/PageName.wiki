@@ -11,7 +11,7 @@ Consiste en un servicio de url-shortener (del tipo de bit.ly o tinyURL) muy bás
  * shortenURL (longURL)
  * expandURL (shortURL) 
 
-La *implementación* del servicio debe utilizar mongodb para el almacenamiento (ver ejemplo en https://github.com/SpringSource/cloudfoundry-samples/wiki/Spring-Hello-MongoDB-Sample-Application )
+La implementación del servicio debe utilizar mongodb para el almacenamiento (ver ejemplo en https://github.com/SpringSource/cloudfoundry-samples/wiki/Spring-Hello-MongoDB-Sample-Application )
 
 2) Cliente web
 

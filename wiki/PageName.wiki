@@ -4,7 +4,7 @@
 
 Consiste en un servicio de url-shortener (del tipo de bit.ly o tinyURL) muy básico desplegable en Cloud Foundry (https://www.cloudfoundry.com/ ), para la prueba se puede utilizar https://www.cloudfoundry.com/micro 
 
-Funcionalmente el proyecto debe cumplir:
+*Funcionalmente* el proyecto debe cumplir:
 
 1) Servicio web con las operaciones:
 

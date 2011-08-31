@@ -16,7 +16,6 @@ La *implementación* del servicio debe utilizar mongodb para el almacenamiento (
 2) Cliente web
 
  * Interfaz que internamente llame a shortenURL y que devuelva el resultado 
-
  * Redirija a la URL larga cuando reciba una url corta 
 
 El *objetivo* del ejercicio es mostrar la capacidad para desarrollar un proyecto básico usando una arquitectura en capas diferenciando Servicio, DAO, etc, así como los conocimientos técnicos de las herramientas a emplear en el proyecto. 
@@ -24,15 +23,10 @@ El *objetivo* del ejercicio es mostrar la capacidad para desarrollar un proyecto
 La *implementación* deberá hacer uso de todas o algunas de las siguientes tecnologías:
 
  * Spring Framework
-
  * Hibernate
-
  * Maven
-
  * GWT
-
  * Webservices (SOAP y/o REST)
-
 
 = Details =
 

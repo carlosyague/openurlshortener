@@ -1,0 +1,17 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+1. Datos del espacio reservado en Micro Cloud Foundry:
+
+Espacio: carlosyague.cloudfoundry.me
+
+Token: drink-underwear-end
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages

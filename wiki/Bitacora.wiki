@@ -1,0 +1,18 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+ # Instalo VMware Player y abro la VM de micro cloud.
+ # Habilito la VT en mi BIOS para permitir 64-bits
+ # Configuro el cloud con mi cuenta
+ # En Windows: me instalo ruby, vmc y git.
+ # C:\GWT\Workspace>git clone https://carlosyague@github.com/SpringSource/cloudfoundry-samples.git
+ # Establecemos como $JAVA_HOME una JDK 1.6
+ # $hello-spring-mongodb>mvn package
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages

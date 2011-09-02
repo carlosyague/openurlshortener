@@ -19,10 +19,10 @@ Me instalo la DB MongoDB
  # Pruebo a acceder a: http://localhost:8080/hello-spring-mongodb/ y me da un fallo de autenticación en la DB para:test_user/efgh@pwdtest
 
 Creo el usuario test_user en la BD creada por defecto 'pwdtest':
-# $MONGO_HOME\bin> mongo
-# mongo> show sbs;
-# mongo> use pwdtest;
-# mongo> db.addUser("test_user", "efgh")
+ # $MONGO_HOME\bin> mongo
+ # mongo> show sbs;
+ # mongo> use pwdtest;
+ # mongo> db.addUser("test_user", "efgh")
 
 = Details =
 

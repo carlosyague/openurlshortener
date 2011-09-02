@@ -20,7 +20,7 @@ Me instalo la DB MongoDB
 
 Creo el usuario test_user en la BD creada por defecto 'pwdtest':
  # $MONGO_HOME\bin> mongo
- # mongo> show sbs;
+ # mongo> show dbs;
  # mongo> use pwdtest;
  # mongo> db.addUser("test_user", "efgh")
 

@@ -1,4 +1,4 @@
-#summary Bitacora de pasos seguidos con el ejemplo hello-spring-mongodb.
+#summary Bitacora hello-spring-mongodb.
 
 = Bitacora de pasos seguidos con el ejemplo hello-spring-mongodb =
 

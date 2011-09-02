@@ -9,6 +9,20 @@
  # C:\GWT\Workspace>git clone https://carlosyague@github.com/SpringSource/cloudfoundry-samples.git
  # Establecemos como $JAVA_HOME una JDK 1.6
  # $hello-spring-mongodb>mvn package
+ # Pruebo a acceder a: http://localhost:8080/hello-spring-mongodb/ y me da un fallo de conexión a la DB en: 127.0.0.1:27017
+
+Me instalo la DB MongoDB
+ # Me descargo la versión para windows de la bbdd mongoDB: http://downloads.mongodb.org/win32/mongodb-win32-i386-1.8.3.zip
+ # Sigo la guía de instalación: http://www.mongodb.org/display/DOCS/Quickstart+Windows
+ # Me creo el directorio "C:\data\db"
+ # Levanto el servidor de db: $MONGO_HOME\bin> mongod
+ # Pruebo a acceder a: http://localhost:8080/hello-spring-mongodb/ y me da un fallo de autenticación en la DB para:test_user/efgh@pwdtest
+
+Creo el usuario test_user en la BD creada por defecto 'pwdtest':
+# $MONGO_HOME\bin> mongo
+# mongo> show sbs;
+# mongo> use pwdtest;
+# mongo> db.addUser("test_user", "efgh")
 
 = Details =
 

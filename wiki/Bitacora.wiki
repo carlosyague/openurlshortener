@@ -9,6 +9,7 @@
  # C:\GWT\Workspace>git clone https://carlosyague@github.com/SpringSource/cloudfoundry-samples.git
  # Establecemos como $JAVA_HOME una JDK 1.6
  # $hello-spring-mongodb>mvn package
+ # Despliego el WAR en un Apache Tomcat 6 configurado con una JDK 1.6
  # Pruebo a acceder a: http://localhost:8080/hello-spring-mongodb/ y me da un fallo de conexión a la DB en: 127.0.0.1:27017
 
 Me instalo la DB MongoDB
@@ -23,6 +24,65 @@ Creo el usuario *test_user* en la BD creada por defecto 'pwdtest':
  # mongo> show dbs;
  # mongo> use pwdtest;
  # mongo> db.addUser("test_user", "efgh")
+
+Vuelvo a acceder a: http://localhost:8080/hello-spring-mongodb/ y compruebo que ya funciona.
+
+Despliego dicha aplicación en CloudFoundry.com:
+
+ # $hello-spring-mongodb\target> vmc push --no-start
+
+{{{
+Would you like to deploy from the current directory? [Yn]: Y
+Application Name: carlosyague-spring-mongodb
+Application Deployed URL: 'carlosyague-spring-mongodb.cloudfoundry.com'?
+Detected a Java SpringSource Spring Application, is this correct? [Yn]:Y
+Memory Reservation [Default:512M] (64M, 128M, 256M, 512M or 1G)
+Creating Application: OK
+Would you like to bind any services to 'carlosyague-spring-mongodb'? [yN]: y
+Would you like to use an existing provisioned service [yN]? y
+The following provisioned services are available:
+1. prueba
+Please select one you wish to provision: prueba
+Binding Service: OK
+Uploading Application:
+  Checking for available resources: OK
+  Processing resources: OK
+  Packing application: OK
+  Uploading (2K): OK
+Push Status: OK
+}}}
+
+ # Verifico que la aplicación está creada:
+
+$hello-spring-mongodb\target>vmc apps
+
+{{{
++----------------------------+----+---------+---------------------------------------------+----------+
+| Application                | #  | Health  | URLS                                        | Services |
++----------------------------+----+---------+---------------------------------------------+----------+
+| carlosyague                | 1  | 0%      | carlosyague.cloudfoundry.com                | prueba   |
+| carlosyague-spring-mongodb | 1  | STOPPED | carlosyague-spring-mongodb.cloudfoundry.com | prueba   |
++----------------------------+----+---------+---------------------------------------------+----------+
+}}}
+
+ # Levanto la aplicación en el servidor:
+
+$hello-spring-mongodb\target>vmc start carlosyague-spring-mongodb
+Staging Application: OK
+Starting Application: OK
+
+ # Verifico que está corriendo el servidor:
+
+hello-spring-mongodb\target>vmc apps
+
+{{{
++----------------------------+----+---------+---------------------------------------------+----------+
+| Application                | #  | Health  | URLS                                        | Services |
++----------------------------+----+---------+---------------------------------------------+----------+
+| carlosyague                | 1  | 0%      | carlosyague.cloudfoundry.com                | prueba   |
+| carlosyague-spring-mongodb | 1  | RUNNING | carlosyague-spring-mongodb.cloudfoundry.com | prueba   |
++----------------------------+----+---------+---------------------------------------------+----------+
+}}}
 
 = Details =
 

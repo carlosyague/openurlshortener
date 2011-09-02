@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Página de inicio
 
 = Introducción =
 
@@ -27,10 +27,3 @@ La *implementación* deberá hacer uso de todas o algunas de las siguientes tecn
  * Maven
  * GWT
  * Webservices (SOAP y/o REST)
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages

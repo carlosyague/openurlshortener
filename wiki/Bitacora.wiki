@@ -87,3 +87,8 @@ hello-spring-mongodb\target> *vmc apps*
 = Cliente REST Flickr =
 
 java Driver.class be0292b9f8fb1621c685ec812f715c2c penguin
+
+
+= Servidor REST restdemo =
+
+http://localhost:8080/restdemo/services/customers

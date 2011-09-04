@@ -92,3 +92,9 @@ java Driver.class be0292b9f8fb1621c685ec812f715c2c penguin
 = Servidor REST restdemo =
 
 http://localhost:8080/restdemo/services/customers
+
+= Servidor REST url-shortener-ws =
+
+GET
+Content-Type=application/x-www-form-urlencoded
+http://localhost:8080/url-shortener-ws/rest/expandURL/1212

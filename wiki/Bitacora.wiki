@@ -98,3 +98,6 @@ http://localhost:8080/restdemo/services/customers
 GET
 Content-Type=application/x-www-form-urlencoded
 http://localhost:8080/url-shortener-ws/rest/expandURL/1212
+
+= Creo BD =
+db.createCollection("urlshortable", {capped:true, size:100000});

@@ -99,5 +99,9 @@ GET
 Content-Type=application/x-www-form-urlencoded
 http://localhost:8080/url-shortener-ws/rest/expandURL/1212
 
-= Creo BD =
-db.createCollection("urlshortable", {capped:true, size:100000});
+= Creo colección =
+> db.createCollection("urlshortable", {capped:true, size:100000});
+
+= Borro la colección =
+> db.urlshortable.drop();
+> db.urlshortable.remove();

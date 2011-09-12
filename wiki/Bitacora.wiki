@@ -29,7 +29,9 @@ Vuelvo a acceder a: http://localhost:8080/hello-spring-mongodb/ y compruebo que 
 
 Despliego dicha aplicación en CloudFoundry.com:
 
- # $hello-spring-mongodb\target> *vmc push --no-start*
+ # $hello-spring-mongodb\target> *vmc push --no-start* (primera vez)
+
+ # $hello-spring-mongodb\target> vmc update hello-spring-mongodb (sucesivas veces)
 
 {{{
 Would you like to deploy from the current directory? [Yn]: Y
